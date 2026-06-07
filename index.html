@@ -224,62 +224,107 @@
             </div>
         </section>
 
-       <!-- ═══════════════════════════════════════ NOSOTROS ═══ -->
-    <section id="nosotros" class="px-6 md:px-margin-desktop py-24">
-        <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16">
+   <!-- ═══════════════════════════════════════ NOSOTROS ═══ -->
+<section id="nosotros" class="px-6 md:px-margin-desktop py-24">
+    <!-- Intro text -->
+    <div class="text-center max-w-2xl mx-auto mb-16 fade-in-section">
+        <div class="inline-flex items-center gap-2 bg-primary-container/20 text-primary px-4 py-2 rounded-full w-max text-sm font-semibold mx-auto mb-4">
+            <span class="material-symbols-outlined text-sm" aria-hidden="true">verified</span>
+            Equipo Certificado
+        </div>
+        <h3 class="font-display text-3xl md:text-4xl font-bold text-on-background">
+            Atención con experiencia, <span class="text-primary italic">calidez y evidencia.</span>
+        </h3>
+        <p class="text-on-surface-variant text-lg leading-relaxed mt-4">
+            Somos fisioterapeutas titulados con formación especializada en rehabilitación domiciliaria. Creemos que la recuperación es más efectiva cuando el paciente se siente seguro y cómodo en su propio entorno.
+        </p>
+    </div>
+
+    <!-- Therapist cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+        <!-- Terapeuta 1 -->
+        <div class="fade-in-section flex flex-col gap-6">
             <!-- Photo -->
-            <div class="w-full md:w-2/5 fade-in-section">
-                <div class="relative">
-                    <div class="absolute inset-0 bg-surface-variant rounded-[3rem] transform -rotate-3 scale-105 -z-10"></div>
-                    <img src="./images/terapeuta.jpg"
-                         alt="Fisioterapeuta profesional de Strong Gait"
-                         class="rounded-[3rem] w-full h-[420px] object-cover object-top ambient-shadow"
-                         onerror="this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"/>
-                    <!-- Badge -->
-                    <div class="absolute -bottom-4 -right-4 bg-primary text-white px-5 py-3 rounded-2xl shadow-lg text-center">
-                        <p class="font-display font-bold text-2xl leading-none">+5</p>
-                        <p class="text-xs text-white/80 mt-1">años de experiencia</p>
-                    </div>
+            <div class="relative">
+                <div class="absolute inset-0 bg-surface-variant rounded-[3rem] transform -rotate-3 scale-105 -z-10"></div>
+                <img src="./images/terapeuta1.jpg"
+                     alt="Fisioterapeuta 1 de Strong Gait"
+                     class="rounded-[3rem] w-full h-[340px] object-cover object-top ambient-shadow"
+                     onerror="this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"/>
+                <!-- Badge -->
+                <div class="absolute -bottom-4 -right-4 bg-primary text-white px-5 py-3 rounded-2xl shadow-lg text-center">
+                    <p class="font-display font-bold text-2xl leading-none">+6</p>
+                    <p class="text-xs text-white/80 mt-1">años de experiencia</p>
                 </div>
             </div>
-
-            <!-- Text -->
-            <div class="w-full md:w-3/5 flex flex-col gap-6 fade-in-section" style="transition-delay: 150ms;">
-                <div class="inline-flex items-center gap-2 bg-primary-container/20 text-primary px-4 py-2 rounded-full w-max text-sm font-semibold">
-                    <span class="material-symbols-outlined text-sm" aria-hidden="true">verified</span>
-                    Profesional Certificado
-                </div>
-                <h3 class="font-display text-3xl md:text-4xl font-bold text-on-background">
-                    Atención con experiencia, <span class="text-primary italic">calidez y evidencia.</span>
-                </h3>
-                <p class="text-on-surface-variant text-lg leading-relaxed">
-                    Somos fisioterapeutas titulados con formación especializada en rehabilitación domiciliaria. Creemos que la recuperación es más efectiva cuando el paciente se siente seguro y cómodo en su propio entorno.
+            <!-- Info -->
+            <div class="pt-4">
+                <h4 class="font-display text-2xl font-bold text-on-background">Ana Moreno</h4>
+                <p class="text-primary font-semibold text-sm mt-1">Fisioterapia Neurológica</p>
+                <p class="text-on-surface-variant leading-relaxed mt-3">
+                    Especializada en rehabilitación post-ACV y atención al adulto mayor en domicilio. Cada sesión está diseñada para recuperar autonomía y calidad de vida.
                 </p>
-                <p class="text-on-surface-variant leading-relaxed">
-                    Cada plan de tratamiento es único: evaluamos, diseñamos y ejecutamos protocolos basados en evidencia científica, adaptados 100% a tu condición, espacio y estilo de vida.
-                </p>
-
-                <div class="grid grid-cols-2 gap-4 mt-2">
-                    <div class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary" aria-hidden="true">school</span>
-                        <span class="text-sm font-medium">Título universitario en Fisioterapia</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary" aria-hidden="true">local_hospital</span>
-                        <span class="text-sm font-medium">Experiencia clínica y domiciliaria</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary" aria-hidden="true">science</span>
-                        <span class="text-sm font-medium">Práctica basada en evidencia</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <span class="material-symbols-outlined text-primary" aria-hidden="true">favorite</span>
-                        <span class="text-sm font-medium">Atención empática y personalizada</span>
-                    </div>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Neurológica</span>
+                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Adulto mayor</span>
+                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Domicilio</span>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Terapeuta 2 -->
+        <div class="fade-in-section flex flex-col gap-6" style="transition-delay: 150ms;">
+            <!-- Photo -->
+            <div class="relative">
+                <div class="absolute inset-0 bg-surface-variant rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
+                <img src="./images/terapeuta2.jpg"
+                     alt="Fisioterapeuta 2 de Strong Gait"
+                     class="rounded-[3rem] w-full h-[340px] object-cover object-top ambient-shadow"
+                     onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"/>
+                <!-- Badge -->
+                <div class="absolute -bottom-4 -right-4 bg-primary text-white px-5 py-3 rounded-2xl shadow-lg text-center">
+                    <p class="font-display font-bold text-2xl leading-none">+5</p>
+                    <p class="text-xs text-white/80 mt-1">años de experiencia</p>
+                </div>
+            </div>
+            <!-- Info -->
+            <div class="pt-4">
+                <h4 class="font-display text-2xl font-bold text-on-background">Carlos Ruiz</h4>
+                <p class="text-primary font-semibold text-sm mt-1">Fisioterapia Músculo-esquelética</p>
+                <p class="text-on-surface-variant leading-relaxed mt-3">
+                    Enfocado en recuperación post-quirúrgica y lesiones deportivas. Protocolos basados en evidencia para volver a moverte con confianza.
+                </p>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Ortopédica</span>
+                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Deportiva</span>
+                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Post-cirugía</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Shared credentials -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-16 fade-in-section">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary" aria-hidden="true">school</span>
+            <span class="text-sm font-medium">Título universitario en Fisioterapia</span>
+        </div>
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary" aria-hidden="true">local_hospital</span>
+            <span class="text-sm font-medium">Experiencia clínica y domiciliaria</span>
+        </div>
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary" aria-hidden="true">science</span>
+            <span class="text-sm font-medium">Práctica basada en evidencia</span>
+        </div>
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary" aria-hidden="true">favorite</span>
+            <span class="text-sm font-medium">Atención empática y personalizada</span>
+        </div>
+    </div>
+</section>
         <!-- ═══════════════════════════════════════ BENEFICIOS ═══ -->
         <section id="beneficios" class="px-6 md:px-margin-desktop py-20 bg-surface-variant/30">
             <div class="text-center max-w-3xl mx-auto mb-16 fade-in-section">

@@ -224,7 +224,7 @@
             </div>
         </section>
 
-               <!-- ═══════════════════════════════════════ NOSOTROS ═══ -->
+              <!-- ═══════════════════════════════════════ NOSOTROS ═══ -->
         <section id="nosotros" class="px-6 md:px-margin-desktop py-24">
  
             <div class="text-center max-w-2xl mx-auto mb-16 fade-in-section">
@@ -232,14 +232,15 @@
                 <p class="text-on-surface-variant text-lg">Profesionales apasionados por devolverte la movilidad y calidad de vida que mereces.</p>
             </div>
  
-            <div class="relative fade-in-section max-w-4xl mx-auto">
+            <!-- Carrusel automático -->
+            <div class="relative fade-in-section" id="team-carousel">
  
-                <!-- Track -->
-                <div class="overflow-hidden">
-                    <div id="team-track" class="flex transition-transform duration-500 ease-in-out">
+                <!-- Overflow oculto -->
+                <div class="overflow-hidden rounded-3xl">
+                    <div id="team-track" class="flex transition-transform duration-700 ease-in-out">
  
                         <!-- ── Terapeuta 1 ── -->
-                        <div class="team-slide min-w-full flex flex-col md:flex-row items-center gap-10 md:gap-14 px-2">
+                        <div class="team-slide min-w-full flex flex-col md:flex-row items-center gap-10 md:gap-14">
                             <div class="w-full md:w-2/5 flex-shrink-0">
                                 <div class="relative">
                                     <div class="absolute inset-0 bg-primary-container/20 rounded-[3rem] transform -rotate-3 scale-105 -z-10"></div>
@@ -287,7 +288,7 @@
                         </div>
  
                         <!-- ── Terapeuta 2 ── -->
-                        <div class="team-slide min-w-full flex flex-col md:flex-row items-center gap-10 md:gap-14 px-2">
+                        <div class="team-slide min-w-full flex flex-col md:flex-row items-center gap-10 md:gap-14">
                             <div class="w-full md:w-2/5 flex-shrink-0">
                                 <div class="relative">
                                     <div class="absolute inset-0 bg-surface-variant rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
@@ -337,22 +338,10 @@
                     </div>
                 </div>
  
-                <!-- Controles -->
-                <div class="flex items-center justify-center gap-6 mt-14">
-                    <button id="team-prev"
-                            class="h-12 w-12 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all disabled:opacity-30 disabled:cursor-not-allowed"
-                            aria-label="Anterior integrante" disabled>
-                        <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-                    </button>
-                    <div class="flex gap-3">
-                        <button id="dot-0" class="h-3 w-8 rounded-full bg-primary transition-all duration-500" aria-label="Terapeuta 1"></button>
-                        <button id="dot-1" class="h-3 w-3 rounded-full bg-surface-variant transition-all duration-500" aria-label="Terapeuta 2"></button>
-                    </div>
-                    <button id="team-next"
-                            class="h-12 w-12 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all"
-                            aria-label="Siguiente integrante">
-                        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-                    </button>
+                <!-- Dots indicadores (solo lectura, sin navegación manual) -->
+                <div class="flex justify-center gap-3 mt-10" role="tablist" aria-label="Integrantes del equipo">
+                    <div id="dot-0" class="h-3 w-8 rounded-full bg-primary transition-all duration-500"></div>
+                    <div id="dot-1" class="h-3 w-3 rounded-full bg-surface-variant transition-all duration-500"></div>
                 </div>
  
             </div>

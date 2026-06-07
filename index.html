@@ -224,7 +224,7 @@
             </div>
         </section>
 
-         <!-- ═══════════════════════════════════════ NOSOTROS ═══ -->
+               <!-- ═══════════════════════════════════════ NOSOTROS ═══ -->
         <section id="nosotros" class="px-6 md:px-margin-desktop py-24">
  
             <div class="text-center max-w-2xl mx-auto mb-16 fade-in-section">
@@ -232,112 +232,131 @@
                 <p class="text-on-surface-variant text-lg">Profesionales apasionados por devolverte la movilidad y calidad de vida que mereces.</p>
             </div>
  
-            <div class="flex flex-col gap-8 max-w-4xl mx-auto">
+            <div class="relative fade-in-section max-w-4xl mx-auto">
  
-                <!-- Tarjeta 1 -->
-                <div class="bg-surface border border-surface-variant rounded-3xl overflow-hidden ambient-shadow fade-in-section flex flex-col sm:flex-row">
-                    <!-- Foto izquierda -->
-                    <div class="sm:w-56 md:w-64 flex-shrink-0">
-                        <img src="./images/terapeuta1.jpg"
-                             alt="Foto de [Nombre Terapeuta 1]"
-                             class="w-full h-56 sm:h-full object-cover object-top"
-                             onerror="this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'"/>
-                    </div>
-                    <!-- Info derecha -->
-                    <div class="flex flex-col justify-center gap-4 p-8 flex-1">
-                        <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1.5 rounded-full w-max text-xs font-semibold">
-                            <span class="material-symbols-outlined text-sm" aria-hidden="true">verified</span>
-                            +5 años de experiencia
-                        </div>
-                        <div>
-                            <h4 class="font-display text-2xl md:text-3xl font-bold text-on-background">[Nombre completo]</h4>
-                            <p class="text-primary font-semibold mt-1">Rehabilitación Traumatológica y Deportiva</p>
-                        </div>
-                        <p class="text-on-surface-variant leading-relaxed text-sm">
-                            Fisioterapeuta titulado con más de 5 años de experiencia en rehabilitación domiciliaria. Especializado en recuperación post-quirúrgica, lesiones deportivas y dolor musculoesquelético crónico. Cada sesión es diseñada con base en evidencia científica y adaptada al entorno del paciente.
-                        </p>
-                        <div class="grid grid-cols-2 gap-2 pt-1">
-                            <div class="flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary text-base" aria-hidden="true">school</span>
-                                <span class="text-xs text-on-surface-variant">Título en Fisioterapia</span>
+                <!-- Track -->
+                <div class="overflow-hidden">
+                    <div id="team-track" class="flex transition-transform duration-500 ease-in-out">
+ 
+                        <!-- ── Terapeuta 1 ── -->
+                        <div class="team-slide min-w-full flex flex-col md:flex-row items-center gap-10 md:gap-14 px-2">
+                            <div class="w-full md:w-2/5 flex-shrink-0">
+                                <div class="relative">
+                                    <div class="absolute inset-0 bg-primary-container/20 rounded-[3rem] transform -rotate-3 scale-105 -z-10"></div>
+                                    <img src="./images/terapeuta1.jpg"
+                                         alt="Foto de [Nombre Terapeuta 1]"
+                                         class="rounded-[3rem] w-full h-[380px] md:h-[420px] object-cover object-top ambient-shadow"
+                                         onerror="this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"/>
+                                    <div class="absolute -bottom-4 -right-4 bg-primary text-white px-5 py-3 rounded-2xl shadow-lg text-center">
+                                        <p class="font-display font-bold text-2xl leading-none">+5</p>
+                                        <p class="text-xs text-white/80 mt-1">años exp.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary text-base" aria-hidden="true">sports_gymnastics</span>
-                                <span class="text-xs text-on-surface-variant">Fisioterapia deportiva</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary text-base" aria-hidden="true">surgical</span>
-                                <span class="text-xs text-on-surface-variant">Rehabilitación post-quirúrgica</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary text-base" aria-hidden="true">science</span>
-                                <span class="text-xs text-on-surface-variant">Práctica basada en evidencia</span>
+                            <div class="w-full md:w-3/5 flex flex-col gap-5 pb-6 md:pb-0">
+                                <div class="inline-flex items-center gap-2 bg-primary-container/20 text-primary px-4 py-2 rounded-full w-max text-sm font-semibold">
+                                    <span class="material-symbols-outlined text-sm" aria-hidden="true">verified</span>
+                                    Fisioterapeuta Certificado
+                                </div>
+                                <div>
+                                    <h4 class="font-display text-2xl md:text-3xl font-bold text-on-background">[Nombre completo]</h4>
+                                    <p class="text-primary font-semibold mt-1">Especialista en Rehabilitación Traumatológica y Deportiva</p>
+                                </div>
+                                <p class="text-on-surface-variant leading-relaxed">
+                                    Fisioterapeuta titulado con más de 5 años de experiencia en rehabilitación domiciliaria. Especializado en recuperación post-quirúrgica, lesiones deportivas y dolor musculoesquelético crónico.
+                                </p>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-1">
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">school</span>
+                                        <span class="text-sm">Título en Fisioterapia</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">science</span>
+                                        <span class="text-sm">Práctica basada en evidencia</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">sports_gymnastics</span>
+                                        <span class="text-sm">Rehabilitación deportiva</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">favorite</span>
+                                        <span class="text-sm">Atención empática y personalizada</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex flex-wrap gap-2 pt-1">
-                            <span class="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full font-medium">Post-operatorio</span>
-                            <span class="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full font-medium">Lesiones deportivas</span>
-                            <span class="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full font-medium">Dolor articular</span>
+ 
+                        <!-- ── Terapeuta 2 ── -->
+                        <div class="team-slide min-w-full flex flex-col md:flex-row items-center gap-10 md:gap-14 px-2">
+                            <div class="w-full md:w-2/5 flex-shrink-0">
+                                <div class="relative">
+                                    <div class="absolute inset-0 bg-surface-variant rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
+                                    <img src="./images/terapeuta2.jpg"
+                                         alt="Foto de [Nombre Terapeuta 2]"
+                                         class="rounded-[3rem] w-full h-[380px] md:h-[420px] object-cover object-top ambient-shadow"
+                                         onerror="this.src='https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"/>
+                                    <div class="absolute -bottom-4 -right-4 bg-primary text-white px-5 py-3 rounded-2xl shadow-lg text-center">
+                                        <p class="font-display font-bold text-2xl leading-none">+3</p>
+                                        <p class="text-xs text-white/80 mt-1">años exp.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-3/5 flex flex-col gap-5 pb-6 md:pb-0">
+                                <div class="inline-flex items-center gap-2 bg-primary-container/20 text-primary px-4 py-2 rounded-full w-max text-sm font-semibold">
+                                    <span class="material-symbols-outlined text-sm" aria-hidden="true">verified</span>
+                                    Fisioterapeuta Certificada
+                                </div>
+                                <div>
+                                    <h4 class="font-display text-2xl md:text-3xl font-bold text-on-background">[Nombre completo]</h4>
+                                    <p class="text-primary font-semibold mt-1">Especialista en Fisioterapia Geriátrica y Neurológica</p>
+                                </div>
+                                <p class="text-on-surface-variant leading-relaxed">
+                                    Apasionada por el cuidado del adulto mayor y la rehabilitación neurológica. Con experiencia en tratamiento de ACV, Parkinson y prevención de caídas en el entorno domiciliario.
+                                </p>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-1">
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">school</span>
+                                        <span class="text-sm">Título en Fisioterapia</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">elderly</span>
+                                        <span class="text-sm">Fisioterapia geriátrica</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">neurology</span>
+                                        <span class="text-sm">Rehabilitación neurológica</span>
+                                    </div>
+                                    <div class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">favorite</span>
+                                        <span class="text-sm">Atención empática y personalizada</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+ 
                     </div>
                 </div>
  
-                <!-- Tarjeta 2 -->
-                <div class="bg-surface border border-surface-variant rounded-3xl overflow-hidden ambient-shadow fade-in-section flex flex-col sm:flex-row" style="transition-delay: 150ms;">
-                    <!-- Foto izquierda -->
-                    <div class="sm:w-56 md:w-64 flex-shrink-0">
-                        <img src="./images/terapeuta2.jpg"
-                             alt="Foto de [Nombre Terapeuta 2]"
-                             class="w-full h-56 sm:h-full object-cover object-top"
-                             onerror="this.src='https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'"/>
+                <!-- Controles -->
+                <div class="flex items-center justify-center gap-6 mt-14">
+                    <button id="team-prev"
+                            class="h-12 w-12 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+                            aria-label="Anterior integrante" disabled>
+                        <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+                    </button>
+                    <div class="flex gap-3">
+                        <button id="dot-0" class="h-3 w-8 rounded-full bg-primary transition-all duration-500" aria-label="Terapeuta 1"></button>
+                        <button id="dot-1" class="h-3 w-3 rounded-full bg-surface-variant transition-all duration-500" aria-label="Terapeuta 2"></button>
                     </div>
-                    <!-- Info derecha -->
-                    <div class="flex flex-col justify-center gap-4 p-8 flex-1">
-                        <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 py-1.5 rounded-full w-max text-xs font-semibold">
-                            <span class="material-symbols-outlined text-sm" aria-hidden="true">verified</span>
-                            +3 años de experiencia
-                        </div>
-                        <div>
-                            <h4 class="font-display text-2xl md:text-3xl font-bold text-on-background">[Nombre completo]</h4>
-                            <p class="text-primary font-semibold mt-1">Fisioterapia Geriátrica y Neurológica</p>
-                        </div>
-                        <p class="text-on-surface-variant leading-relaxed text-sm">
-                            Apasionada por el cuidado del adulto mayor y la rehabilitación neurológica. Con experiencia en tratamiento de ACV, Parkinson y prevención de caídas en el entorno domiciliario, diseña planes seguros y efectivos adaptados a cada paciente.
-                        </p>
-                        <div class="grid grid-cols-2 gap-2 pt-1">
-                            <div class="flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary text-base" aria-hidden="true">school</span>
-                                <span class="text-xs text-on-surface-variant">Título en Fisioterapia</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary text-base" aria-hidden="true">elderly</span>
-                                <span class="text-xs text-on-surface-variant">Fisioterapia geriátrica</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary text-base" aria-hidden="true">neurology</span>
-                                <span class="text-xs text-on-surface-variant">Rehabilitación neurológica</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span class="material-symbols-outlined text-primary text-base" aria-hidden="true">favorite</span>
-                                <span class="text-xs text-on-surface-variant">Atención empática</span>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap gap-2 pt-1">
-                            <span class="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full font-medium">Adulto mayor</span>
-                            <span class="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full font-medium">ACV · Parkinson</span>
-                            <span class="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full font-medium">Prevención de caídas</span>
-                        </div>
-                    </div>
+                    <button id="team-next"
+                            class="h-12 w-12 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all"
+                            aria-label="Siguiente integrante">
+                        <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+                    </button>
                 </div>
  
             </div>
         </section>
-
-
-
-
-
-
         <!-- ═══════════════════════════════════════ BENEFICIOS ═══ -->
         <section id="beneficios" class="px-6 md:px-margin-desktop py-20 bg-surface-variant/30">
             <div class="text-center max-w-3xl mx-auto mb-16 fade-in-section">

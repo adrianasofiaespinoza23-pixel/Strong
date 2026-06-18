@@ -97,30 +97,18 @@
             transform: none;
         }
 
-        /* Pricing card highlight ring */
-        .pricing-featured {
-            box-shadow: 0 0 0 2px #00696e, 0px 20px 40px rgba(0, 105, 110, 0.18);
-        }
-
-        /* WhatsApp button pulse */
         @keyframes wa-pulse {
             0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
             50% { box-shadow: 0 0 0 10px rgba(37,211,102,0); }
         }
         .wa-pulse { animation: wa-pulse 2.5s ease-in-out infinite; }
-
-        /* Star rating */
-        .stars { color: #f59e0b; }
-
-        /* Img fallback */
-        /*img { background-color: #e5e2e1; }*/
     </style>
 </head>
 <body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
 
-    <!-- ═══════════════════════════════════════ HEADER ═══ -->
+    <!-- HEADER -->
     <header class="w-full px-6 md:px-margin-desktop h-20 md:h-24 z-50 bg-background/90 backdrop-blur-md sticky top-0 border-b border-surface-variant flex justify-between items-center transition-all duration-300">
-        <a href="#" class="flex items-center gap-3 group" aria-label="Strong Gait - Ir al inicio">
+        <a href="index.html" class="flex items-center gap-3 group" aria-label="Strong Gait - Ir al inicio">
             <div class="h-10 w-10 md:h-12 md:w-12 flex items-center justify-center">
                 <img src="./images/logo3.png" alt="Strong Gait Logo" class="w-full h-full object-contain"
                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
@@ -135,11 +123,11 @@
         </a>
 
         <nav class="hidden md:flex items-center gap-8 font-medium text-sm" aria-label="Navegación principal">
-            <a href="#inicio" class="text-on-surface hover:text-primary transition-colors">Inicio</a>
-            <a href="#nosotros" class="text-on-surface hover:text-primary transition-colors">Nosotros</a>
-            <a href="#servicios" class="text-on-surface hover:text-primary transition-colors">Servicios</a>
-            <a href="#precios" class="text-on-surface hover:text-primary transition-colors">Precios</a>
-            <a href="#contacto" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-[#004f53] transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+            <a href="index.html" class="text-primary transition-colors">Inicio</a>
+            <a href="nosotros.html" class="text-on-surface hover:text-primary transition-colors">Nosotros</a>
+            <a href="servicios.html" class="text-on-surface hover:text-primary transition-colors">Servicios</a>
+            <a href="precios.html" class="text-on-surface hover:text-primary transition-colors">Precios</a>
+            <a href="contacto.html" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-[#004f53] transition-all shadow-md hover:shadow-lg flex items-center gap-2">
                 <span class="material-symbols-outlined text-sm" aria-hidden="true">calendar_month</span>
                 Agendar Cita
             </a>
@@ -153,19 +141,19 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 bg-background z-40 hidden flex-col pt-24 px-6 pb-6 border-t border-surface-variant md:hidden" role="dialog" aria-modal="true" aria-label="Menú de navegación">
         <nav class="flex flex-col gap-6 text-lg font-medium">
-            <a href="#inicio" class="mobile-link text-on-surface border-b border-surface-variant pb-4">Inicio</a>
-            <a href="#nosotros" class="mobile-link text-on-surface border-b border-surface-variant pb-4">Nosotros</a>
-            <a href="#servicios" class="mobile-link text-on-surface border-b border-surface-variant pb-4">Servicios</a>
-            <a href="#precios" class="mobile-link text-on-surface border-b border-surface-variant pb-4">Precios</a>
-            <a href="#contacto" class="mobile-link bg-primary text-white px-6 py-4 rounded-xl text-center mt-4 flex justify-center items-center gap-2">
+            <a href="index.html" class="mobile-link text-primary border-b border-surface-variant pb-4">Inicio</a>
+            <a href="nosotros.html" class="mobile-link text-on-surface border-b border-surface-variant pb-4">Nosotros</a>
+            <a href="servicios.html" class="mobile-link text-on-surface border-b border-surface-variant pb-4">Servicios</a>
+            <a href="precios.html" class="mobile-link text-on-surface border-b border-surface-variant pb-4">Precios</a>
+            <a href="contacto.html" class="mobile-link bg-primary text-white px-6 py-4 rounded-xl text-center mt-4 flex justify-center items-center gap-2">
                 Agendar Cita Ahora
             </a>
         </nav>
     </div>
 
     <main>
-        <!-- ═══════════════════════════════════════ HERO ═══ -->
-        <section id="inicio" class="relative px-6 md:px-margin-desktop py-12 md:py-24 overflow-hidden flex flex-col-reverse md:flex-row items-center gap-12 md:gap-8">
+        <!-- HERO -->
+        <section class="relative px-6 md:px-margin-desktop py-12 md:py-24 overflow-hidden flex flex-col-reverse md:flex-row items-center gap-12 md:gap-8">
             <div class="w-full md:w-1/2 flex flex-col gap-6 z-10 animate-fade-in-up">
                 <div class="inline-flex items-center gap-2 bg-primary-container/20 text-primary px-4 py-2 rounded-full w-max text-sm font-semibold">
                     <span class="material-symbols-outlined text-sm" aria-hidden="true">location_on</span>
@@ -178,11 +166,11 @@
                     Atención fisioterapéutica personalizada, profesional y empática sin salir de casa. Evaluamos, tratamos y prevenimos lesiones adaptándonos a tu entorno y necesidades.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 mt-4">
-                    <a href="#contacto" class="bg-primary text-white px-8 py-4 rounded-full font-medium hover:bg-[#004f53] transition-all text-center flex items-center justify-center gap-2 shadow-lg">
+                    <a href="contacto.html" class="bg-primary text-white px-8 py-4 rounded-full font-medium hover:bg-[#004f53] transition-all text-center flex items-center justify-center gap-2 shadow-lg">
                         <span class="material-symbols-outlined" aria-hidden="true">call</span>
                         Contáctanos Hoy
                     </a>
-                    <a href="#servicios" class="bg-surface-variant text-on-surface px-8 py-4 rounded-full font-medium hover:bg-secondary-container transition-all text-center">
+                    <a href="servicios.html" class="bg-surface-variant text-on-surface px-8 py-4 rounded-full font-medium hover:bg-secondary-container transition-all text-center">
                         Ver Servicios
                     </a>
                 </div>
@@ -196,7 +184,7 @@
             </div>
         </section>
 
-        <!-- ═══════════════════════════════════════ CÓMO FUNCIONA ═══ -->
+        <!-- CÓMO FUNCIONA -->
         <section class="px-6 md:px-margin-desktop py-16 bg-primary/5">
             <div class="text-center max-w-2xl mx-auto mb-12 fade-in-section">
                 <h3 class="font-display text-3xl md:text-4xl font-bold text-on-background mb-3">¿Cómo funciona?</h3>
@@ -210,7 +198,6 @@
                     <p class="text-on-surface-variant">Escríbenos por WhatsApp o llámanos. Cuéntanos tu situación y coordinaremos la visita.</p>
                 </div>
                 <div class="fade-in-section flex flex-col items-center text-center gap-4 p-6 relative" style="transition-delay: 120ms;">
-                    <!-- connector line desktop -->
                     <div class="hidden md:block absolute left-0 top-8 w-full h-px bg-surface-variant -z-10"></div>
                     <div class="h-16 w-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-display font-bold shadow-lg">2</div>
                     <h4 class="font-display text-xl font-bold">Agendamos la cita</h4>
@@ -223,378 +210,9 @@
                 </div>
             </div>
         </section>
-
-  <!-- ═══════════════════════════════════════ NOSOTROS ═══ -->
-<section id="nosotros" class="px-6 md:px-margin-desktop py-24">
-    <!-- Intro text -->
-    <div class="text-center max-w-2xl mx-auto mb-16 fade-in-section">
-        <div class="inline-flex items-center gap-2 bg-primary-container/20 text-primary px-4 py-2 rounded-full w-max text-sm font-semibold mx-auto mb-4">
-            <span class="material-symbols-outlined text-sm" aria-hidden="true">verified</span>
-            Equipo Certificado
-        </div>
-        <h3 class="font-display text-3xl md:text-4xl font-bold text-on-background">
-            Atención con experiencia, <span class="text-primary italic">calidez y evidencia.</span>
-        </h3>
-        <p class="text-on-surface-variant text-lg leading-relaxed mt-4">
-           Somos fisioterapeutas titulados con experiencia en atención domiciliaria. Creemos que la recuperación es más efectiva cuando el paciente se siente seguro y cómodo en su propio entorno
-    </div>
-
-    <!-- Therapist cards -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 max-w-6xl mx-auto">
-
-         <!-- Terapeuta 1 -->
-        <div class="fade-in-section flex flex-col gap-6">
-            <!-- Photo -->
-            <div class="relative">
-                <div class="absolute inset-0 bg-surface-variant rounded-[3rem] transform -rotate-3 scale-105 -z-10"></div>
-                <img src="./images/terapeuta1.png"
-                     alt="Fisioterapeuta 1 de Strong Gait"
-                     class="rounded-[3rem] w-full h-[340px] object-cover object-top ambient-shadow"
-                     onerror="this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"/>
-                <!-- Badge -->
-                <div class="absolute -bottom-4 -right-4 bg-primary text-white px-5 py-3 rounded-2xl shadow-lg text-center">
-                    <p class="font-display font-bold text-2xl leading-none">+3</p>
-                    <p class="text-xs text-white/80 mt-1">años de experiencia</p>
-                </div>
-            </div>
-            <!-- Info -->
-            <div class="pt-4">
-                <h4 class="font-display text-2xl font-bold text-on-background">Lic. Marcos Espinoza  </h4>
-                <p class="text-primary font-semibold text-sm mt-1">Fisioterapeuta</p>
-                <p class="text-on-surface-variant leading-relaxed mt-3">
-                    Experiencia clínica en lesiones deportivas, traumatológicas y atención al adulto mayor. Su objetivo es que recuperes la capacidad de moverte con confianza y que cuentes con las herramientas para prevenir nuevas lesiones. 
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Deportiva</span>
-                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Adulto mayor</span>
-                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Traumatológica</span>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
-    <div class="flex items-center gap-2">
-        <span class="material-symbols-outlined text-primary text-xl">school</span>
-        <span class="text-sm">Licenciado en Fisioterapia</span>
-    </div>
-
-    <div class="flex items-center gap-2">
-        <span class="material-symbols-outlined text-primary text-xl">elderly</span>
-        <span class="text-sm">Experiencia en adulto mayor</span>
-    </div>
-
-
-    <div class="flex items-center gap-2">
-        <span class="material-symbols-outlined text-primary text-xl">home_health</span>
-        <span class="text-sm">Atención domiciliaria</span>
-    </div>
-</div>
-            </div>
-        </div>
-
-        <!-- Terapeuta 2 -->
-        <div class="fade-in-section flex flex-col gap-6" style="transition-delay: 150ms;">
-            <!-- Photo -->
-            <div class="relative">
-                <div class="absolute inset-0 bg-surface-variant rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
-                <img src="./images/terapeuta2Me.png"
-                     alt="Fisioterapeuta 2 de Strong Gait"
-                     class="rounded-[3rem] w-full h-[340px] object-cover object-top ambient-shadow"
-                     onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"/>
-                <!-- Badge -->
-                <div class="absolute -bottom-4 -right-4 bg-primary text-white px-5 py-3 rounded-2xl shadow-lg text-center">
-                    <p class="font-display font-bold text-2xl leading-none">+3</p>
-                    <p class="text-xs text-white/80 mt-1">años de experiencia</p>
-                </div>
-            </div>
-            <!-- Info -->
-            <div class="pt-4">
-                <h4 class="font-display text-2xl font-bold text-on-background">Lic. Melanin Huera</h4>
-                <p class="text-primary font-semibold text-sm mt-1">Fisioterapeuta</p>
-                <p class="text-on-surface-variant leading-relaxed mt-3">
-                    Experiencia clínica en rehabilitación traumatológica, atención geriátrica y pediátrica. Su objetivo es ayudar a sus pacientes a recuperar la movilidad, funcionalidad e independencia mediante una atención fisioterapéutica personalizada, promoviendo su bienestar y calidad de vida.
-                </p>
-                <div class="flex flex-wrap gap-2 mt-4">
-                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Geriátrica</span>
-                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Deportiva</span>
-                    <span class="bg-primary-container/20 text-primary text-xs font-medium px-3 py-1 rounded-full">Traumatológica</span>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
-    <div class="flex items-center gap-2">
-        <span class="material-symbols-outlined text-primary text-xl">school</span>
-        <span class="text-sm">Licenciada en Fisioterapia</span>
-    </div>
-
-    <div class="flex items-center gap-2">
-        <span class="material-symbols-outlined text-primary text-xl">elderly</span>
-        <span class="text-sm">Experiencia en adulto mayor</span>
-    </div>
-
-    <div class="flex items-center gap-2">
-        <span class="material-symbols-outlined text-primary text-xl">child_care</span>
-        <span class="text-sm">Rehabilitación Pediátrica</span>
-    </div>
-
-    <div class="flex items-center gap-2">
-        <span class="material-symbols-outlined text-primary text-xl">home_health</span>
-        <span class="text-sm">Atención domiciliaria</span>
-    </div>
-</div>
-            </div>
-        </div>
-
-    </div>
-</section>
-        <!-- ═══════════════════════════════════════ BENEFICIOS ═══ -->
-        <section id="beneficios" class="px-6 md:px-margin-desktop py-20 bg-surface-variant/30">
-            <div class="text-center max-w-3xl mx-auto mb-16 fade-in-section">
-                <h3 class="font-display text-3xl md:text-4xl font-bold text-on-background mb-4">¿Por qué elegir atención a domicilio?</h3>
-                <p class="text-on-surface-variant text-lg">Llevamos la clínica a tu casa, eliminando el estrés del tráfico y las salas de espera para que te enfoques 100% en tu recuperación.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-surface p-8 rounded-3xl ambient-shadow fade-in-section border border-white">
-                    <div class="h-14 w-14 bg-primary-container/20 text-primary rounded-2xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-3xl" aria-hidden="true">home</span>
-                    </div>
-                    <h4 class="font-display text-xl font-bold mb-3">Comodidad Absoluta</h4>
-                    <p class="text-on-surface-variant leading-relaxed">Recibe tratamiento en tu propio entorno, donde te sientes más seguro y relajado, facilitando el proceso de sanación.</p>
-                </div>
-                <div class="bg-surface p-8 rounded-3xl ambient-shadow fade-in-section border border-white" style="transition-delay: 100ms;">
-                    <div class="h-14 w-14 bg-primary-container/20 text-primary rounded-2xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-3xl" aria-hidden="true">accessibility_new</span>
-                    </div>
-                    <h4 class="font-display text-xl font-bold mb-3">Atención 1 a 1</h4>
-                    <p class="text-on-surface-variant leading-relaxed">El terapeuta dedica el 100% de su tiempo y atención exclusivamente a ti durante toda la sesión, sin distracciones.</p>
-                </div>
-                <div class="bg-surface p-8 rounded-3xl ambient-shadow fade-in-section border border-white" style="transition-delay: 200ms;">
-                    <div class="h-14 w-14 bg-primary-container/20 text-primary rounded-2xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-3xl" aria-hidden="true">medical_services</span>
-                    </div>
-                    <h4 class="font-display text-xl font-bold mb-3">Evaluación Real</h4>
-                    <p class="text-on-surface-variant leading-relaxed">Evaluamos tu movilidad en el espacio donde realmente vives, adaptando los ejercicios a tus escaleras, cama y sillas.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ═══════════════════════════════════════ SERVICIOS ═══ -->
-        <section id="servicios" class="px-6 md:px-margin-desktop py-24">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 fade-in-section">
-                <div class="max-w-2xl">
-                    <h3 class="font-display text-3xl md:text-4xl font-bold text-on-background mb-4">Nuestros Servicios</h3>
-                    <p class="text-on-surface-variant text-lg">Tratamientos basados en evidencia científica, adaptados a todas las edades y condiciones físicas.</p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="group relative overflow-hidden rounded-3xl fade-in-section">
-                    <img src="./images/rt.jpeg" alt="Rehabilitación Traumatológica - recuperación de fracturas y lesiones articulares"
-                         class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
-                         onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#002022] via-[#002022]/60 to-transparent flex flex-col justify-end p-6">
-                        <h4 class="font-display text-xl font-bold text-white mb-2">Rehabilitación Traumatológica</h4>
-                        <p class="text-white/80 text-sm">Recuperación post-operatoria, fracturas, esguinces y dolor articular crónico.</p>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-3xl fade-in-section" style="transition-delay: 100ms;">
-                    <img src="./images/fg.jpg" alt="Fisioterapia Geriátrica - atención especializada para adultos mayores"
-                         class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
-                         onerror="this.src='https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#002022] via-[#002022]/60 to-transparent flex flex-col justify-end p-6">
-                        <h4 class="font-display text-xl font-bold text-white mb-2">Fisioterapia Geriátrica</h4>
-                        <p class="text-white/80 text-sm">Prevención de caídas, mantenimiento de la movilidad y mejora de la autonomía.</p>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-3xl fade-in-section" style="transition-delay: 200ms;">
-                    <img src="./images/fp.jpeg"
-                         alt="Rehabilitación Neurológica - tratamiento para ACV y Parkinson"
-                         class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#002022] via-[#002022]/60 to-transparent flex flex-col justify-end p-6">
-                        <h4 class="font-display text-xl font-bold text-white mb-2">Fisioterapia pediatrica</h4>
-                        <p class="text-white/80 text-sm">Atención a niños con Síndrome de Down, Parálisis cerebral, retraso en el desarrollo motor y alteraciones neuromotoras.</p>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-3xl fade-in-section" style="transition-delay: 300ms;">
-                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                         alt="Fisioterapia Deportiva - prevención y tratamiento de lesiones deportivas"
-                         class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#002022] via-[#002022]/60 to-transparent flex flex-col justify-end p-6">
-                        <h4 class="font-display text-xl font-bold text-white mb-2">Fisioterapia Deportiva</h4>
-                        <p class="text-white/80 text-sm">Tratamiento y prevención de lesiones deportivas y  recuperación post compensación o entrenamiento.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-       <!-- ═══════════════════════════════════════ PRECIOS ═══ -->
-<section id="precios" class="px-6 md:px-margin-desktop py-24 bg-surface-variant/30">
-    <div class="text-center max-w-3xl mx-auto mb-16 fade-in-section">
-        <span>Tarifas</span>
-        <h3 class="font-display text-3xl md:text-4xl font-bold text-on-background mb-4">Un precio claro,
-sin paquetes ni sorpresas.</h3>
-        <p class="text-on-surface-variant text-lg">Pagas por cada sesión que asistes. Sin compromisos de paquetes ni mensualidades.</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto items-stretch">
-
-        <!-- Traumatología · Adultos Mayores -->
-        <div class="bg-surface rounded-3xl p-8 flex flex-col gap-6 ambient-shadow border border-white fade-in-section">
-            <div>
-                <span class="text-sm font-semibold text-primary uppercase tracking-wider block mb-2">Traumatología · Adultos Mayores</span>
-                <p class="text-xl font-semibold text-on-background mb-4">Rehabilitación funcional y movilidad</p>
-                <hr class="border-t border-black/30 mb-4">
-                <div class="flex items-end gap-1">
-                    <span class="font-display text-5xl font-bold text-on-background">$15</span>
-                    <span class="text-on-surface-variant mb-2">/ sesión</span>
-                </div>
-                <p class="text-on-surface-variant text-sm mt-2">Lesiones traumatológicas, post-quirúrgicas y actividad supervisada en adultos mayores.</p>
-            </div>
-            <ul class="flex flex-col gap-3 flex-1" role="list">
-                <li class="flex items-start gap-3">
-                    <span class="material-symbols-outlined text-primary mt-0.5 text-xl" aria-hidden="true">check_circle</span>
-                    <span class="text-sm">60 minutos de terapia en tu domicilio</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="material-symbols-outlined text-primary mt-0.5 text-xl" aria-hidden="true">check_circle</span>
-                    <span class="text-sm">Evaluación y diagnóstico funcional</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="material-symbols-outlined text-primary mt-0.5 text-xl" aria-hidden="true">check_circle</span>
-                    <span class="text-sm">Rutinas de ejercicio para los días sin sesión</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="material-symbols-outlined text-primary mt-0.5 text-xl" aria-hidden="true">check_circle</span>
-                    <span class="text-sm">Seguimiento y ajuste del plan en cada visita</span>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="material-symbols-outlined text-primary mt-0.5 text-xl" aria-hidden="true">check_circle</span>
-                    <span class="text-sm">Atención a domicilio en todo Quito</span>
-                </li>
-            </ul>
-            <a href="https://wa.me/593995307120?text=Hola%2C%20quisiera%20agendar%20una%20sesi%C3%B3n%20de%20traumatolog%C3%ADa%20o%20adultos%20mayores." target="_blank"
-               class="mt-auto border-2 border-primary text-primary px-6 py-3 rounded-full font-semibold text-center hover:bg-primary hover:text-white transition-all"
-               aria-label="Agendar sesión de traumatología o adultos mayores por WhatsApp">
-                Agendar sesión por WhatsApp
-            </a>
-        </div>
-
-        <!-- Pediatría · DESTACADA -->
-<div class="bg-primary rounded-3xl p-8 flex flex-col gap-6 pricing-featured fade-in-section relative overflow-hidden"
-     style="transition-delay: 120ms;">
-
-    <!-- Decoración -->
-    <div class="absolute -bottom-8 -right-8 w-40 h-40 bg-white/10 rounded-full"></div>
-
-    <div>
-        <span class="text-sm font-semibold text-white/70 uppercase tracking-wider block mb-2">
-            Pediatría
-        </span>
-
-        <p class="text-xl font-semibold text-white mb-4">
-            Rehabilitación pediátrica
-        </p>
-
-        <hr class="border-t border-white/20 mb-4">
-
-        <div class="flex items-end gap-1">
-            <span class="font-display text-5xl font-bold text-white">$18</span>
-            <span class="text-white/70 mb-2">/ sesión</span>
-        </div>
-
-        <p class="text-white/80 text-sm mt-2">
-            Atención especializada para niños con lesiones, retrasos motores o necesidades de desarrollo físico.
-        </p>
-    </div>
-
-    <ul class="flex flex-col gap-3 flex-1" role="list">
-        <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-white mt-0.5 text-xl">check_circle</span>
-            <span class="text-sm text-white">60 minutos de terapia en tu domicilio</span>
-        </li>
-
-        <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-white mt-0.5 text-xl">check_circle</span>
-            <span class="text-sm text-white">Evaluación y diagnóstico funcional</span>
-        </li>
-
-        <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-white mt-0.5 text-xl">check_circle</span>
-            <span class="text-sm text-white">Rutinas de ejercicio para los días sin sesión</span>
-        </li>
-
-        <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-white mt-0.5 text-xl">check_circle</span>
-            <span class="text-sm text-white">Seguimiento y ajuste del plan en cada visita</span>
-        </li>
-
-        <li class="flex items-start gap-3">
-            <span class="material-symbols-outlined text-white mt-0.5 text-xl">check_circle</span>
-            <span class="text-sm text-white">Atención a domicilio en todo Quito</span>
-        </li>
-    </ul>
-
-    <a href="https://wa.me/593995307120?text=Hola%2C%20quisiera%20agendar%20una%20sesi%C3%B3n%20de%20fisioterapia%20pedi%C3%A1trica."
-       target="_blank"
-       class="mt-auto bg-white text-primary px-6 py-3 rounded-full font-semibold text-center hover:bg-surface-variant transition-all shadow-md">
-        Agendar sesión por WhatsApp
-    </a>
-</div>
-
-    </div>
-
-    <p class="text-center text-on-surface-variant text-sm mt-10 fade-in-section">
-        * El número de sesiones necesarias varía según cada caso. En la primera visita evaluamos tu situación y te explicamos el plan con honestidad.
-    </p>
-</section>
-
-        
-
-        <!-- ═══════════════════════════════════════ CTA CONTACTO ═══ -->
-        <section id="contacto" class="px-6 md:px-margin-desktop py-20 pb-32">
-            <div class="bg-primary rounded-[3rem] p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden fade-in-section ambient-shadow">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-full mix-blend-multiply filter blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
-                <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#004f53] rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2"></div>
-
-                <div class="relative z-10 w-full md:w-3/5 text-white">
-                    <h2 class="font-display text-3xl md:text-5xl font-bold mb-6">Empieza tu camino hacia una vida sin dolor hoy mismo.</h2>
-                    <p class="text-white/80 text-lg mb-8 max-w-lg">Agenda una evaluación inicial en tu domicilio. Cuéntanos sobre tus molestias y diseñaremos un plan específico para ti.</p>
-
-                    <div class="flex flex-col sm:flex-row gap-6">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-white/20 p-3 rounded-full" aria-hidden="true">
-                                <span class="material-symbols-outlined text-white">phone_iphone</span>
-                            </div>
-                            <div>
-                                <p class="text-sm text-white/70">Llámanos o WhatsApp</p>
-                                <a href="tel:+593995307120" class="font-bold text-xl hover:underline">0995307120</a>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="bg-white/20 p-3 rounded-full" aria-hidden="true">
-                                <span class="material-symbols-outlined text-white">schedule</span>
-                            </div>
-                            <div>
-                                <p class="text-sm text-white/70">Horario de Atención</p>
-                                <p class="font-bold text-lg">Lun – Sáb: 08:00 – 19:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative z-10 w-full md:w-2/5 flex justify-center md:justify-end">
-                    <a href="https://wa.me/593995307120?text=Hola,%20quiero%20agendar%20una%20evaluaci%C3%B3n%20a%20domicilio." target="_blank"
-                       rel="noopener noreferrer"
-                       class="bg-white text-primary px-8 py-5 rounded-full font-bold text-lg hover:bg-surface-variant hover:scale-105 transition-all shadow-xl flex items-center gap-3 w-full md:w-auto justify-center"
-                       aria-label="Chatear con Strong Gait por WhatsApp">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6" aria-hidden="true">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-                            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.12 1.534 5.847L.072 23.928l6.224-1.43A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.802 9.802 0 01-5.031-1.388l-.36-.214-3.733.857.906-3.626-.235-.373A9.799 9.799 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
-                        </svg>
-                        Chatear por WhatsApp
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <!-- ═══════════════════════════════════════ FOOTER ═══ -->
+    <!-- FOOTER -->
     <footer class="bg-surface-variant/50 pt-16 pb-8 px-6 md:px-margin-desktop border-t border-surface-variant">
         <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
             <div class="flex items-center gap-3">
@@ -616,7 +234,7 @@ sin paquetes ni sorpresas.</h3>
         </div>
     </footer>
 
-    <!-- ═══════════════════════════════════════ FLOATING WHATSAPP ═══ -->
+    <!-- FLOATING WHATSAPP -->
     <a href="https://wa.me/593995307120?text=Hola,%20quiero%20agendar%20una%20sesi%C3%B3n%20de%20fisioterapia." 
        target="_blank" rel="noopener noreferrer"
        class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl wa-pulse hover:scale-110 transition-transform"
@@ -627,9 +245,8 @@ sin paquetes ni sorpresas.</h3>
         </svg>
     </a>
 
-    <!-- ═══════════════════════════════════════ SCRIPTS ═══ -->
+    <!-- SCRIPTS -->
     <script>
-        // Mobile Menu Toggle
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
         const icon = btn.querySelector('span');
@@ -649,7 +266,6 @@ sin paquetes ni sorpresas.</h3>
             if (!menu.classList.contains('hidden')) toggleMenu();
         }));
 
-        // Scroll Animations
         document.addEventListener("DOMContentLoaded", function () {
             const observer = new IntersectionObserver((entries, obs) => {
                 entries.forEach(entry => {

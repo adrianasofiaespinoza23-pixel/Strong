@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Servicios - Strong Gait Fisioterapia</title>
+    <!-- Mismos metas, fuentes y estilos que index.html -->
+    <meta name="description" content="Nuestros servicios de terapia física en Quito: Rehabilitación traumatológica, pediátrica, geriátrica y deportiva."/>
+    <link rel="icon" type="image/png" href="./images/logo3.png"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00696e", "primary-container": "#25a1a8", "on-primary-container": "#003133", "on-primary": "#ffffff",
+                        "secondary": "#5e5e5c", "secondary-container": "#e1dfdc", "on-secondary-container": "#636360",
+                        "background": "#fcf9f8", "on-background": "#1c1b1b", "surface": "#fcf9f8", "on-surface": "#1c1b1b",
+                        "surface-variant": "#e5e2e1", "on-surface-variant": "#3d494a", "outline": "#6d797a", "tertiary": "#914c1a", "error": "#ba1a1a",
+                    },
+                    spacing: { "margin-mobile": "24px", "margin-desktop": "80px", "section-gap": "96px" },
+                    fontFamily: { "display": ["Playfair Display", "serif"], "body": ["Inter", "sans-serif"] },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-display { font-family: 'Playfair Display', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .ambient-shadow { box-shadow: 0px 10px 30px rgba(0, 105, 110, 0.08); }
+        .fade-in-section { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; will-change: opacity, transform; }
+        .fade-in-section.is-visible { opacity: 1; transform: none; }
+        @keyframes wa-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); } 50% { box-shadow: 0 0 0 10px rgba(37,211,102,0); } }
+        .wa-pulse { animation: wa-pulse 2.5s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased">
+
+    <!-- HEADER -->
+    <header class="w-full px-6 md:px-margin-desktop h-20 md:h-24 z-50 bg-background/90 backdrop-blur-md sticky top-0 border-b border-surface-variant flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3 group">
+            <div class="h-10 w-10 md:h-12 md:w-12 flex items-center justify-center"><img src="./images/logo3.png" alt="Strong Gait Logo" class="w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/></div>
+            <div>
+                <p class="font-display font-bold text-xl md:text-2xl text-primary leading-none">Strong Gait</p>
+                <p class="text-[10px] md:text-xs text-on-surface-variant tracking-wider uppercase font-semibold mt-1">Fisioterapia a Domicilio</p>
+            </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+            <a href="index.html" class="text-on-surface hover:text-primary transition-colors">Inicio</a>
+            <a href="nosotros.html" class="text-on-surface hover:text-primary transition-colors">Nosotros</a>
+            <a href="servicios.html" class="text-primary transition-colors">Servicios</a>
+            <a href="precios.html" class="text-on-surface hover:text-primary transition-colors">Precios</a>
+            <a href="contacto.html" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-[#004f53] transition-all flex items-center gap-2"><span class="material-symbols-outlined text-sm">calendar_month</span>Agendar Cita</a>
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden text-on-surface p-2"><span class="material-symbols-outlined text-3xl">menu</span></button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-background z-40 hidden flex-col pt-24 px-6 pb-6 border-t border-surface-variant md:hidden">
+        <nav class="flex flex-col gap-6 text-lg font-medium">
+            <a href="index.html" class="mobile-link text-on-surface border-b border-surface-variant pb-4">Inicio</a>
+            <a href="nosotros.html" class="mobile-link text-on-surface border-b border-surface-variant pb-4">Nosotros</a>
+            <a href="servicios.html" class="mobile-link text-primary border-b border-surface-variant pb-4">Servicios</a>
+            <a href="precios.html" class="mobile-link text-on-surface border-b border-surface-variant pb-4">Precios</a>
+            <a href="contacto.html" class="mobile-link bg-primary text-white px-6 py-4 rounded-xl text-center mt-4 flex justify-center items-center gap-2">Agendar Cita Ahora</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- SERVICIOS -->
+        <section class="px-6 md:px-margin-desktop py-24">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 fade-in-section">
+                <div class="max-w-2xl">
+                    <h3 class="font-display text-3xl md:text-4xl font-bold text-on-background mb-4">Nuestros Servicios</h3>
+                    <p class="text-on-surface-variant text-lg">Tratamientos basados en evidencia científica, adaptados a todas las edades y condiciones físicas.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Servicio 1 -->
+                <div class="group relative overflow-hidden rounded-3xl fade-in-section">
+                    <img src="./images/rt.jpeg" alt="Rehabilitación Traumatológica" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#002022] via-[#002022]/60 to-transparent flex flex-col justify-end p-6">
+                        <h4 class="font-display text-xl font-bold text-white mb-2">Rehabilitación Traumatológica</h4>
+                        <p class="text-white/80 text-sm">Recuperación post-operatoria, fracturas, esguinces y dolor articular crónico.</p>
+                    </div>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="group relative overflow-hidden rounded-3xl fade-in-section" style="transition-delay: 100ms;">
+                    <img src="./images/fg.jpg" alt="Fisioterapia Geriátrica" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#002022] via-[#002022]/60 to-transparent flex flex-col justify-end p-6">
+                        <h4 class="font-display text-xl font-bold text-white mb-2">Fisioterapia Geriátrica</h4>
+                        <p class="text-white/80 text-sm">Prevención de caídas, mantenimiento de la movilidad y mejora de la autonomía.</p>
+                    </div>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="group relative overflow-hidden rounded-3xl fade-in-section" style="transition-delay: 200ms;">
+                    <img src="./images/fp.jpeg" alt="Fisioterapia pediátrica" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#002022] via-[#002022]/60 to-transparent flex flex-col justify-end p-6">
+                        <h4 class="font-display text-xl font-bold text-white mb-2">Fisioterapia pediatrica</h4>
+                        <p class="text-white/80 text-sm">Atención a niños con Síndrome de Down, Parálisis cerebral, retraso en el desarrollo motor y alteraciones neuromotoras.</p>
+                    </div>
+                </div>
+                <!-- Servicio 4 -->
+                <div class="group relative overflow-hidden rounded-3xl fade-in-section" style="transition-delay: 300ms;">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fisioterapia Deportiva" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#002022] via-[#002022]/60 to-transparent flex flex-col justify-end p-6">
+                        <h4 class="font-display text-xl font-bold text-white mb-2">Fisioterapia Deportiva</h4>
+                        <p class="text-white/80 text-sm">Tratamiento y prevención de lesiones deportivas y recuperación post compensación o entrenamiento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-surface-variant/50 pt-16 pb-8 px-6 md:px-margin-desktop border-t border-surface-variant">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+            <div class="flex items-center gap-3">
+                <div class="h-10 w-10 md:h-12 md:w-12 flex items-center justify-center"><img src="./images/logo3.png" alt="Strong Gait Logo" class="w-full h-full object-contain" onerror="this.style.display='none'"/></div>
+                <span class="font-display font-bold text-xl text-primary">Strong Gait</span>
+            </div>
+            <nav class="flex gap-6 text-on-surface-variant">
+                <a href="https://www.facebook.com/profile.php?id=61574468592506" class="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/stronggait7/" class="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.tiktok.com/@strong.gait?is_from_webapp=1&sender_device=pc" class="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </nav>
+        </div>
+        <div class="text-center md:text-left text-sm text-on-surface-variant flex flex-col md:flex-row justify-between items-center border-t border-outline/30 pt-8">
+            <p>&copy; 2026 Strong Gait Fisioterapia. Todos los derechos reservados.</p>
+            <p class="mt-2 md:mt-0">Servicio exclusivo en Quito, Ecuador.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/593995307120?text=Hola,%20quiero%20agendar%20una%20sesi%C3%B3n%20de%20fisioterapia." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl wa-pulse hover:scale-110 transition-transform">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-7 h-7"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.12 1.534 5.847L.072 23.928l6.224-1.43A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.802 9.802 0 01-5.031-1.388l-.36-.214-3.733.857.906-3.626-.235-.373A9.799 9.799 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+    </a>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('span');
+        btn.addEventListener('click', () => {
+            const isHidden = menu.classList.contains('hidden');
+            menu.classList.toggle('hidden'); menu.classList.toggle('flex');
+            icon.textContent = isHidden ? 'close' : 'menu';
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); obs.unobserve(entry.target); } });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

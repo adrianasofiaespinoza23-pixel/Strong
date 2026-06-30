@@ -1,0 +1,16 @@
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# css/js URLs carry a ?v=<content-hash> query string (added by build.js),
+# so it's safe to cache them for a year: any change produces a new URL.
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate

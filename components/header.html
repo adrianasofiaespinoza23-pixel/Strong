@@ -1,0 +1,34 @@
+    <!-- ═══════════════════════════════════════ HEADER ═══ -->
+    <header class="w-full px-6 md:px-margin-desktop h-20 md:h-24 z-50 bg-background/90 backdrop-blur-md sticky top-0 border-b border-surface-variant flex justify-between items-center transition-all duration-300">
+        <a href="#" class="flex items-center gap-3 group" aria-label="Strong Gait - Ir al inicio">
+            <div class="h-10 w-10 md:h-12 md:w-12 flex items-center justify-center">
+                <picture>
+                    <source srcset="./images/logo3.webp" type="image/webp"/>
+                    <img src="./images/logo3.png" alt="Strong Gait Logo" width="200" height="200" class="w-full h-full object-contain"
+                         onerror="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='flex'"/>
+                </picture>
+                <div style="display:none" class="h-10 w-10 bg-primary rounded-xl items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-xl">self_improvement</span>
+                </div>
+            </div>
+            <div>
+                <p class="font-display font-bold text-xl md:text-2xl text-primary leading-none">Strong Gait</p>
+                <p class="text-[10px] md:text-xs text-on-surface-variant tracking-wider uppercase font-semibold mt-1">Fisioterapia a Domicilio</p>
+            </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 font-medium text-sm" aria-label="Navegación principal">
+            <a href="#inicio" class="text-on-surface hover:text-primary transition-colors">Inicio</a>
+            <a href="#nosotros" class="text-on-surface hover:text-primary transition-colors">Nosotros</a>
+            <a href="#servicios" class="text-on-surface hover:text-primary transition-colors">Servicios</a>
+            <a href="#precios" class="text-on-surface hover:text-primary transition-colors">Precios</a>
+            <a href="#contacto" class="bg-primary text-white px-6 py-3 rounded-full hover:bg-[#004f53] transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">calendar_month</span>
+                Agendar Cita
+            </a>
+        </nav>
+
+        <button id="mobile-menu-btn" class="md:hidden text-on-surface p-2 focus:outline-none" aria-label="Abrir menú" aria-expanded="false">
+            <span class="material-symbols-outlined text-3xl" aria-hidden="true">menu</span>
+        </button>
+    </header>

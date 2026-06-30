@@ -1,0 +1,14 @@
+{
+  "name": "strong-gait-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Strong Gait static marketing site",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "tailwindcss": "^3.4.19"
+  }
+}

@@ -25,21 +25,25 @@ function resolveIncludes(content, baseDir) {
     });
 }
 
-// Content-hash query strings let css/js be cached as `immutable` for a year
-// (see _headers) while still busting the cache the moment either file changes.
+// Content-hash query strings let js be cached as `immutable` for a year
+// (see _headers) while still busting the cache the moment the file changes.
 function hashOf(relPath) {
     const buf = fs.readFileSync(path.join(root, relPath));
     return crypto.createHash('md5').update(buf).digest('hex').slice(0, 8);
 }
 
-function withCacheBust(html) {
+// CSS is inlined (not linked) so the browser never has to make a render-blocking
+// round trip for it - this is a single-page site, so there's no other page to
+// benefit from a separately cached stylesheet anyway.
+function postProcess(html) {
+    const css = fs.readFileSync(path.join(root, 'css/styles.css'), 'utf8');
     return html
-        .replace('./css/styles.css"', `./css/styles.css?v=${hashOf('css/styles.css')}"`)
+        .replace('<link rel="stylesheet" href="./css/styles.css"/>', `<style>${css}</style>`)
         .replace('./js/main.js"', `./js/main.js?v=${hashOf('js/main.js')}"`);
 }
 
 const template = fs.readFileSync(templatePath, 'utf8');
-const assembled = withCacheBust(resolveIncludes(template, root));
+const assembled = postProcess(resolveIncludes(template, root));
 
 const banner = '<!-- AUTO-GENERATED FILE. Edit components/*.html or index.template.html, then run `node build.js`. -->\n';
 
